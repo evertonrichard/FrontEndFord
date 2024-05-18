@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switchCase</title>
+</head>
+<body>
+    <!-- <script>
+        // switch-case
+        // Adega de bebidas
+
+
+        // menu personalizado
+        alert(`
+            Bem vindo a minha adega, escolha uma opção abaixo:
+            1 - Coca-cola
+            2 - Fanta - Uva
+            3 - Cachaça
+            4 - Cantinho
+            5 - Cerveja
+            6 - Corote 
+        `)
+        // entrada de dados
+
+        const opcaoUsuario = Number(prompt("Qual opção de bebida você escolhe?"))
+
+        // processamento
+
+        switch (opcaoUsuario) {
+            case 1:
+                // saida de dados
+                alert("A opção que o usuário informou é Coca-cola")
+                let respostaUser =  prompt("Você deseja acrescentar gelo e limão?")
+
+
+                // ternario
+                 respostaUser == "sim" ? alert("A sua bebida  terá gelo e limão") : alert("Ok, sem gelo e sem limao")
+                    
+                
+                break;
+            case 2:
+                // saida de dados
+                alert("A opção que o usuário informou é Fanta-Uva")
+                let respostaUserFanta = prompt("Você deseja acrescentar gelo?")
+
+
+                respostaUserFanta == "sim" ? alert("A sua bebida terá gelo") : alert("Ok, sem gelo")
+                break;
+            case 3:
+                // saida de dados
+                alert("A opção que o usuário informou é Cachaça")
+                let respostaUserCachaça = prompt("Você deseja acrescentar limão?")
+
+
+                respostaUserCachaça == "sim" ? alert("A sua bebida terá limão") : alert(" Ok, sem limão")
+                break;
+            case 4:
+                // saida de dados
+                alert("A opção que o usuário informou é Cantinho")
+                let respostaUserCantinho = prompt("Você deseja acrescentar gelo?")
+
+
+                respostaUserCantinho =="sim" ? alert("A sua bebida terá gelo") : alert("Ok, sem limão")
+
+                break;
+            case 5:
+                // saida de dados
+                alert("A opção que o usuário informou é Cerveja")
+                let respostaUserCerveja = prompt("Você deseja com colarinho?")
+
+
+                respostaUserCerveja == "sim" ? alert("A sua cerveja terá colarinho") : alert("Ok, sem colarinho")
+                break;
+            case 6:
+                // saida de dados
+                alert("A opção que o usuário informou é Corote")
+                let respostaUserCorote = prompt("Você deseja limão?")
+
+
+                respostaUserCorote == "sim" ? alert("O seu corote terá limão") : alert("Ok, sem limão")
+                break;
+        
+            default:
+                alert("opção inválida")
+                break;
+        }
+
+
+    </script> -->
+
+    <!-- Segunda forma de fazer -->
+
+    <script>
+        // switch-case
+        // Adega de bebidas
+
+
+        // menu personalizado
+        // LITERAL TEMPLATE
+        alert(`
+            Bem vindo a minha adega, escolha uma opção abaixo:
+            1 - Coca-cola
+            2 - Fanta - Uva
+            3 - Cachaça
+            4 - Cantinho
+            5 - Cerveja
+            6 - Corote 
+        `)
+        // entrada de dados
+
+        const opcaoUsuario = Number(prompt("Qual opção de bebida você escolhe?"))
+
+        // processamento
+
+        let respostaUser;
+
+        switch (opcaoUsuario) {
+            case 1:
+                // saida de dados
+                alert("A opção que o usuário informou é Coca-cola")
+                respostaUser =  prompt("Você deseja acrescentar gelo e limão? sim ou não ?") .toLocaleLowerCase()
+
+
+                // ternario
+                 respostaUser == "sim" ? alert("A sua bebida  terá gelo e limão") : alert("Ok, sem gelo e sem limao")
+                    
+                
+                break;
+            case 2:
+                // saida de dados
+                alert("A opção que o usuário informou é Fanta-Uva")
+                respostaUser = prompt("Você deseja acrescentar gelo? sim ou não ? ") .toLocaleLowerCase()
+
+
+                respostaUser == "sim" ? alert("A sua bebida terá gelo") : alert("Ok, sem gelo")
+                break;
+            case 3:
+                // saida de dados
+                alert("A opção que o usuário informou é Cachaça")
+                respostaUser = prompt("Você deseja acrescentar limão? sim ou não ?") .toLocaleLowerCase()
+
+
+                respostaUser == "sim" ? alert("A sua bebida terá limão") : alert(" Ok, sem limão")
+                break;
+            case 4:
+                // saida de dados
+                alert("A opção que o usuário informou é Cantinho")
+                respostaUser = prompt("Você deseja acrescentar gelo? sim ou não ?") .toLocaleLowerCase()
+
+
+                respostaUser =="sim" ? alert("A sua bebida terá gelo") : alert("Ok, sem limão")
+
+                break;
+            case 5:
+                // saida de dados
+                alert("A opção que o usuário informou é Cerveja")
+                respostaUser= prompt("Você deseja com colarinho? sim ou não ?") .toLocaleLowerCase()
+
+
+                respostaUser == "sim" ? alert("A sua cerveja terá colarinho") : alert("Ok, sem colarinho")
+                break;
+            case 6:
+                // saida de dados
+                alert("A opção que o usuário informou é Corote")
+                respostaUser = prompt("Você deseja limão? sim ou não ?") .toLocaleLowerCase()
+
+
+                respostaUser == "sim" ? alert("O seu corote terá limão") : alert("Ok, sem limão")
+                break;
+        
+            default:
+                alert("opção inválida")
+                break;
+        }
+
+
+    </script>
+    
+</body>
+</html>
